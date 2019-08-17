@@ -34,7 +34,7 @@ Start with init a new azure function
 ```
 func init
 ```
-Choose option 2 (node)
+Choose `option 2` (node). 
 Create a new azure function
 ```
 func new 
