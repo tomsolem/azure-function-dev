@@ -4,7 +4,9 @@ When your happy use the azure cli to create a new azure function and publish the
 The docker image is intended to be used for development only. You can fork this repo and start development of your azure function app. 
 
 # Getting started
-Clone or fork this repo to your local computer. I assume that you already installed docker. The commands below are tested on macos. I guess the `$PWD` variable will differ on other os. 
+Clone or fork this repo to your local computer. 
+
+I assume that you already installed docker. The commands below are tested on macos. I guess the `$PWD` variable will differ on other os. 
 ___
 Build the docker image
 ```
@@ -14,8 +16,9 @@ Start docker image
 ```
 docker run -it --rm --name azure-func-dev -v $PWD/app/:/home/app/ -p 8080:7071 azure-func-dev
 ```
-You are now working from inside the docker image. *The folder /app/ is 
-mounted into the docker in the path /home/app/.
+You are now working from inside the docker image. 
+
+The folder /app/ is mounted into the docker in the path /home/app/.
 ```
 cd /home/app
 ```
@@ -48,13 +51,16 @@ Login with azure cli
 az login
 ```
 You'll get a url to past into the browser and fill inn token key.
-*After login you should set the correct subscription on the account:
+
+
+After login you should set the correct subscription on the account:
 ```
 az account set -s <subscription-id>
 ```
 To publish the azure function. 
-First we need to create a new azure function. *First we need to find 
-what location we can create the function in:
+First we need to create a new azure function. 
+
+First we need to find what location we can create the function in:
 ```
 az account list-locations | grep name
 ```
