@@ -1,12 +1,20 @@
 # Azure Function app Development
-I had a hard time getting a good flow for a short azure function demo. So I ended up create a custom ubuntu image to use for azure function development. This docker image can be used to create new azure function (only tested with node js). After the function is created you can test and develop against it in the docker image. 
+I had a hard time getting a good flow for a short azure function demo. 
+
+So I ended up create a custom ubuntu image to use for azure function development. This docker image can be used to create new azure function (only tested with node js). After the function is created you can test and develop against it in the docker image. 
+
+
 When your happy use the azure cli to create a new azure function and publish the code from inside the same docker image. 
+
+
 The docker image is intended to be used for development only. You can fork this repo and start development of your azure function app. 
 
 # Getting started
 Clone or fork this repo to your local computer. 
 
-I assume that you already installed docker. The commands below are tested on macos. I guess the `$PWD` variable will differ on other os. 
+I assume that you already installed docker. The commands below are tested on macos. 
+
+I guess the `$PWD` variable will differ on other os. 
 ___
 Build the docker image
 ```
