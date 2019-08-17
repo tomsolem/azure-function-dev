@@ -34,6 +34,8 @@ Start with init a new azure function
 ```
 func init
 ```
+![alt text](https://raw.githubusercontent.com/tomsolem/azure-function-dev/master/img/func-init.png "func init")
+
 Choose `option 2` (node). 
 Create a new azure function
 ```
