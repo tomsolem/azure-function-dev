@@ -44,6 +44,7 @@ func new
 * Select language: 1 (javascript)
 * Select template: 8 (HTTP trigger)
 * Function name: "TestTrigger"
+![alt text](https://raw.githubusercontent.com/tomsolem/azure-function-dev/master/img/func-new.png "func new")
 
 Start the new function app
 ```
@@ -54,6 +55,7 @@ Open postman outside the docker image.
 http://localhost:8080/api/TestTrigger?name=HelloWorld
 ```
 Note: we mapped the port 8080 to the 7071 inside the container. 
+![alt text](https://raw.githubusercontent.com/tomsolem/azure-function-dev/master/img/postman.png "postman")
 
 # Publish the azure function app
 Login with azure cli
@@ -91,5 +93,6 @@ At last we can publish our new function app
 ```
 func azure functionapp publish demo-function-app-001
 ```
+![alt text](https://raw.githubusercontent.com/tomsolem/azure-function-dev/master/img/publish.png "func publish")
 
 
