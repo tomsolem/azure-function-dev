@@ -67,7 +67,7 @@ Note: we mapped the port 8080 to the 7071 inside the container.
 ![alt text](https://raw.githubusercontent.com/tomsolem/azure-function-dev/master/img/postman.png "postman")
 
 # Publish the azure function app
-Login with azure cli
+### Login with azure cli
 ```
 az login
 ```
@@ -79,7 +79,7 @@ After login you should set the correct subscription on the account:
 az account set -s <subscription-id>
 ```
 To publish the azure function. 
-First we need to create a new azure function. 
+### Create a new azure function. 
 
 First we need to find what location we can create the function in:
 ```
@@ -98,6 +98,7 @@ Then we can create the azure function app
 ```
 az functionapp create --consumption-plan-location westeurope --name demo-function-app-001 --os-type Linux --resource-group demo-function-app --runtime node --storage-account demofunctionapp
 ```
+### Publish azure function app
 At last we can publish our new function app
 ```
 func azure functionapp publish demo-function-app-001
