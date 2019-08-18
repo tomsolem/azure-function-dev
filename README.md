@@ -79,7 +79,7 @@ After login you should set the correct subscription on the account:
 az account set -s <subscription-id>
 ```
 To publish the azure function. 
-### Create a new azure function. 
+### Create a new azure function 
 
 First we need to find what location we can create the function in:
 ```
