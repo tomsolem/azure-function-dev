@@ -35,16 +35,20 @@ Start with init a new azure function
 ```
 func init
 ```
+* Choose `option 2` (node). 
+* Select language: 1 (javascript)
+
+
 ![alt text](https://raw.githubusercontent.com/tomsolem/azure-function-dev/master/img/func-init.png "func init")
 
-Choose `option 2` (node). 
+
 Create a new azure function
 ```
 func new 
 ```
-* Select language: 1 (javascript)
+
 * Select template: 8 (HTTP trigger)
-* Function name: "TestTrigger"
+* Give the function a name: "TestTrigger"
 
 
 ![alt text](https://raw.githubusercontent.com/tomsolem/azure-function-dev/master/img/func-new.png "func new")
