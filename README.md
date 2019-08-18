@@ -1,6 +1,5 @@
 # Azure Function app Development
-I had a hard time getting a good flow for a short azure function demo. It require dotnet core 2.1 (not 2.2) and also node js version 8 or 10. 
-![alt text](https://raw.githubusercontent.com/tomsolem/azure-function-dev/master/img/function-req.png "func requirments")
+I had a hard time getting a good flow for a short azure function demo. It require dotnet core 2.1 (not 2.2) and also node js version 8 or 10. I had different version installed on my computer.
 
 
 So I ended up create a custom ubuntu image to use for azure function development. This docker image can be used to create new azure function (only tested with node js). After the function is created you can test and develop against it in the docker image. 
