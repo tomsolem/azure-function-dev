@@ -16,6 +16,8 @@ jobs:
         name: tomso/azure-function-dev
         username: ${{ secrets.DOCKER_USERNAME }}
         password: ${{ secrets.DOCKER_PASSWORD }}
+        snapshot: true
+        cache: true
     - name: Update Docker hub description
       uses: peter-evans/dockerhub-description@v2.0.0
       env:
