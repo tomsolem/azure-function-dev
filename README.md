@@ -104,7 +104,6 @@ At last we can publish our new function app
 func azure functionapp publish demo-function-app-001
 ```
 
-
 ![alt text](https://raw.githubusercontent.com/tomsolem/azure-function-dev/master/img/publish.png "func publish")
 
 
