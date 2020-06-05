@@ -18,7 +18,7 @@ jobs:
         password: ${{ secrets.DOCKER_PASSWORD }}
         snapshot: true
         cache: true
-        tags: dotnet_3_1_az_cli_node_12_func_3
+        tags: latest,dotnet_3_1_az_cli_node_12_func_3
     - name: Update Docker hub description
       uses: peter-evans/dockerhub-description@v2.0.0
       env:
